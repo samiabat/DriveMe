@@ -18,7 +18,7 @@ namespace DriveMe.Persistence
                  .Build();
 
             var builder = new DbContextOptionsBuilder<DriveMeDBContext>();
-            var connectionString = configuration.GetConnectionString("CineFlexConnectionString");
+            var connectionString = configuration.GetConnectionString("DriveMeConnectionString");
 
             builder.UseNpgsql(connectionString);
 
