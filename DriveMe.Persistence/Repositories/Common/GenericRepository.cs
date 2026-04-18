@@ -1,10 +1,5 @@
-﻿using DriveMe.Application.Contracts.Persistence;
+using DriveMe.Application.Contracts.Persistence;
 using Microsoft.EntityFrameworkCore;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace DriveMe.Persistence.Repositories
 {
@@ -16,6 +11,7 @@ namespace DriveMe.Persistence.Repositories
         {
             _dbContext = dbContext;
         }
+
         public async Task<T> Add(T entity)
         {
             await _dbContext.AddAsync(entity);
@@ -47,6 +43,5 @@ namespace DriveMe.Persistence.Repositories
         {
             _dbContext.Entry(entity).State = EntityState.Modified;
         }
-
     }
 }

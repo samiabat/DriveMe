@@ -1,14 +1,9 @@
-﻿using DriveMe.Application.Contracts.Persistence;
+using DriveMe.Application.Contracts.Persistence;
 using DriveMe.Persistence.Repositories;
 using DriveMe.Persistence.Repositories.UnitOfWorkRepo;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace DriveMe.Persistence
 {
