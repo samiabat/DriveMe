@@ -1,13 +1,8 @@
-﻿using DriveMe.Domain.Common;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using DriveMe.Domain.Common;
 
 namespace DriveMe.Domain
 {
-    public class Review: BaseDomainEntity
+    public class Review : BaseDomainEntity
     {
         public int ReviewerId { get; set; }
         public int RevieweeeId { get; set; }
