@@ -1,9 +1,4 @@
-﻿using DriveMe.Application.Contracts.Persistence;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using DriveMe.Application.Contracts.Persistence;
 
 namespace DriveMe.Persistence.Repositories.UnitOfWorkRepo
 {
@@ -11,10 +6,10 @@ namespace DriveMe.Persistence.Repositories.UnitOfWorkRepo
     {
         private readonly DriveMeDBContext _context;
         private IUserRepository _userRepository;
-
         private ICarRepository _carRepository;
         private IReviewRepository _reviewRepository;
         private IRideRequestRepository _rideRequestRepository;
+
         public UnitOfWork(DriveMeDBContext context)
         {
             _context = context;
@@ -29,6 +24,7 @@ namespace DriveMe.Persistence.Repositories.UnitOfWorkRepo
                 return _userRepository;
             }
         }
+
         public ICarRepository CarRepository
         {
             get
